@@ -269,7 +269,7 @@ oder interaktiv (öffnet Editor)
 - Atomar
 - Beschreibung
 - Editor einstellen:
-  - `git config core.editor notepad`
+  - `git config --global core.editor notepad`
 
 ---
 #[The first check-in of the day](http://geekandpoke.typepad.com/geekandpoke/2010/04/one-day-in-the-life-of-a-coder-part-3.html)
@@ -383,7 +383,7 @@ f83fcb6 Add awesome-gyazo
 
 ---
 # Commits ansehen
-`git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue    )<%an>%Creset' --abbrev-commit`
+`git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit`
 
 ```
 * 3f414f7 Add learn-tt  Jan Vlnas, 80 minutes ago
@@ -589,7 +589,8 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 ---
 # GUIs:
 - gitk (Sehr rudimentär, in git oft eingebaut, OpenSource)
-- Source Tree (Kostenlos, OS X, Windows) (Empfehlung)
+- Git Graken (Kostenlos, OSX, Windows, Linux)
+- Source Tree (Kostenlos, OS X, Windows)
 - Github Desktop (Kostenlos, OS X, Windows)
 - GitX (Open Source, OS X)
 - TortoiseGit (Windows) (Warnung!)
