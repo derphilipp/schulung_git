@@ -487,9 +487,9 @@ z.B. `git checkout -b feature/add_scanner_support`
 ---
 # Branching Tipps
 Tipps:
-- Branche Namen mit "/" gruppieren
+- Branch Namen mit "/" gruppieren
 - Ein Branch pro Aufgabe
-- Branches kosten nichts
+- Branches kosten nichts 
 - Branches können auf den Server übertragen werden
 - Ungebrauchte Branches löschen
 
@@ -504,7 +504,7 @@ Tipps:
 ---
 # Versionsstände markieren: Tagging
 `git tag TAG-BEZEICHUNG`
-- z.B. `git tag 1.2.0 1b2c3d4f`
+- z.B. `git tag v1.2.0 1b2c3d4f`
 - z.B. `git tag my_favorite_version 4400440`
 
 ---
@@ -526,13 +526,14 @@ Tipps:
 - Alternative: Anwenden und entfernen:
   - `git stash pop`
 ---
-## Erweitertes stashen: 
+## Erweitertes Stashen: 
 - Kann "de-appliziert" werden: 
   - `git stash show -p | git apply -R`
 - Alternativ: 
   - `git config --global alias.stash-unapply '!git stash show -p | git apply -R'`
-  - Ab dann: `git stash-unapply`
-- Neuen Branch aus stashes
+- Ab dann
+  - `git stash-unapply`
+- Neuen Branch aus Stashes
   - `git stash branch "feature/adds_password_manager"`
 ---
 # Änderungen abholen
@@ -611,7 +612,7 @@ Acht
 # Git mit Subversion
 - Git kann als Brücke zu Subversion genutzt werden
 - Alle Commits von Subversion werden lokal geladen (Kann lange dauern)
-- Lokale commits können auf Subversion Server gepusht werden
+- Lokale Commits können auf Subversion Server gepusht werden
 - Mehr Informationen: Stichwort [git-svn](https://git-scm.com/docs/git-svn)
 
 ---
@@ -684,12 +685,15 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 - [Try Git](https://try.github.io)
 
 ---
-#Cheat Sheets
-[Git Tower](http://www.git-tower.com/blog/git-cheat-sheet/)
-[Github](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
-[NPD Software](http://ndpsoftware.com/git-cheatsheet.html)
-[Rawgit](https://rawgit.com/pastjean/git-cheat-sheet/master/git-cheat-sheet.svg)
-[Overapi](http://overapi.com/git/)
+# Cheat Sheets
+- [Github](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+- [NDP Software](http://ndpsoftware.com/git-cheatsheet.html)
+- [Zack Rusin](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
+- [Git Tower](https://www.git-tower.com/blog/git-cheat-sheet-de)
+- [Rawgit](https://rawgit.com/pastjean/git-cheat-sheet/master/git-cheat-sheet.svg)
+---
+# Wenn alles schlimm ist
+- [Cheatsheet](http://justinhileman.info/article/git-pretty/git-pretty.png)
 ---
 # Kontakt:
 - Philipp Weißmann
