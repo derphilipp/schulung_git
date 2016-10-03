@@ -516,7 +516,24 @@ Tipps:
 `git reset`
 - Tipp: Fast jede Situation ist in der Hilfe von `git reset` beschrieben.
 - Hilfe unter `git reset --help` konsultieren!
-
+---
+# Änderungen "parken": Stash
+`git stash`
+- "Parkt" Änderungen an Projekt lokal
+  - `git stash`
+- Wie "lokales" Commit, jedoch nicht in History; Kann ausgegeben werden
+  - `git stash list`
+- Kann wieder appliziert werden: 
+  - `git stash apply`
+---
+## Erweitertes stashen: 
+- Kann "de-appliziert" werden: 
+  - `git stash show -p | git apply -R`
+- Alternativ: 
+  - `git config --global alias.stash-unapply '!git stash show -p | git apply -R'`
+  - Ab dann: `git stash-unapply`
+- Neuen Branch aus stashes
+  - `git stash branch "feature/adds_password_manager"`
 ---
 # Änderungen abholen
 `git fetch`
