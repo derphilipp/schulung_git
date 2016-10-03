@@ -279,6 +279,7 @@ oder interaktiv (öffnet Editor)
 
   - Nachvollziehbare, kurze Nachricht
   - Beschreibung der Änderung auf logischer Ebene
+  - Commit editieren: `git commit --amend` 
 
 Beispiele:
 - *Changes API from sqlite2 to sqlite3*
@@ -403,6 +404,28 @@ f83fcb6 Add awesome-gyazo
 |/
 * 71ef478 Add AngularJS-Learning and AngularJS2-Learning
 ```
+
+---
+# Exkurs: Eigene Kommandos
+
+- Eigene Kommandos können in der Konfiguration angelegt werden
+- Beispiel: Datei an vorhandenen Commit einfügen
+  - `git commit --amend --no-edit` soll eigenen Befehl bekommen
+  - `git config --global alias.commend 'commit --amend --no-edit'`
+- Anwendung:
+    - `git add filereader.cpp`
+    - `git commit -m "Adds capabilities of reading files"`
+    - "Oh je..."
+    - `git add filereader.h`
+    - `git commend`
+---
+# Exkurs: Eigene Kommandos
+- Beispiel: Neues Projekt:
+  - `$ git config --global alias.it '!git init && git commit -m "Erster Commit" --allow-empty'`
+- Wirklich alles 'Stashen'
+  - `git config --global alias.stashall 'stash --all'`
+- Hübsches git log (siehe zuvor)
+  - `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
 
 ---
 # Inhalt eines Commits ansehen
