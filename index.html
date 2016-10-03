@@ -199,7 +199,7 @@ Philipp Weißmann
 # Installation
 - Linux:
   - Meist schon installiert, Paktmanager
-- OS X:
+- macOS:
   - Schon installiert, neuere Version: Installationspaket, Homebrew oder Macports
 - Windows:
   - Installationspaket
@@ -307,6 +307,7 @@ Beispiele:
   - `git checkout ` *DATEINAME*
 - Ein kompletter Zustand:
   - `git checkout ` *VERSION*
+  - Achtung: Ohne neuen Branch befindet man sich im "detached head state", d.h. es können keine Änderungen commited werden
 - Aus "detached head state" zurückkehren:
   - `git checkout -`
 
@@ -499,13 +500,6 @@ Tipps:
   - z.B. `git merge bug/burning_printer`
 
 ---
-# Merge Konflikte
-- Tritt nur bei Widersprüchen auf
-- Bei Konflikten müssen diese gelöst werden
-- Manuelles Editieren von Dateien notwendig
-- Zusammengeführte Dateien mit `git add` markieren
-
----
 # Versionsstände markieren: Tagging
 `git tag TAG-BEZEICHUNG`
 - z.B. `git tag 1.2.0 1b2c3d4f`
@@ -525,6 +519,10 @@ Tipps:
   - `git stash list`
 - Kann wieder appliziert werden: 
   - `git stash apply`
+- ... und dann entfernt werden:
+  - `git stash drop`
+- Alternative: Anwenden und entfernen:
+  - `git stash pop`
 ---
 ## Erweitertes stashen: 
 - Kann "de-appliziert" werden: 
@@ -562,6 +560,28 @@ Tipps:
 - Falls der Server noch nicht bekannt ist:
   - `git remote add origin SERVER`
   - z.B. `git remote add origin git@github.com:jnv/lists.git`
+
+---
+# Merge Konflikte
+- Tritt nur bei Widersprüchen auf
+- Bei Konflikten müssen diese gelöst werden
+- Manuelles Editieren von Dateien notwendig
+- Zusammengeführte Dateien mit `git add` markieren
+---
+# Merge Beispiel
+- Beispielsituation:
+  - Beim Versuch zu mergen (z.B. via `git pull`) entsteht ein Konflikt
+  - Der Konflikt in der Datei wird in die Datei geschrieben
+```
+Anzahl der Planeten im Sonnensystem:
+<<<<<<< HEAD
+Neun
+=======
+Acht
+>>>>>>> branch-a
+```
+  - Durch Editieren muss der Konflikt gelöst werden
+  - Am Ende fertige Dateien hinzufügen (`git add`) und comitten (`git commit`)
 
 ---
 # Alle lokalen Änderungen verwerfen:
@@ -620,6 +640,12 @@ Tipps:
 z.B. `git rebase -i feature/add/sqlite3/support`
 - Achtung: Erfordert i.d.R. `git push --force`, was die History verändert.
 - Dies ist bei gemeinsamen Arbeiten i.d.R. nicht möglich
+---
+## Cherry-Picking
+
+- Ermöglicht Auswahl von zu nutzenden Commits
+- Nur mit hoher Entwicklerdisziplin und temporären Einsatz praktikabel
+- Siehe `git cherry-pick`
 
 ---
 # Arbeiten mit Github
@@ -631,11 +657,16 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 ---
 # GUIs:
 - gitk (Sehr rudimentär, in git oft eingebaut, OpenSource)
-- Git Graken (Kostenlos, OSX, Windows, Linux)
-- Source Tree (Kostenlos, OS X, Windows)
-- Github Desktop (Kostenlos, OS X, Windows)
-- GitX (Open Source, OS X)
+- Git Kraken (Kostenlos, macOS, Windows, Linux)
+- Source Tree (Kostenlos, macOS, Windows)
+- Github Desktop (Kostenlos, macOS, Windows)
+- GitX (Open Source, macOS)
 - TortoiseGit (Windows) (Warnung!)
+---
+# Integration:
+- Praktisch jede moderne IDE
+- Qualität/Anwendung schwankt extrem
+- Visual Studio ab 2015 (gut gelöst)
 
 ---
 # Weiterführendes und Quellen
