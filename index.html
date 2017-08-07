@@ -18,7 +18,7 @@
         font-weight: 400;
         margin-bottom: 0;
       }
-      table {     border-collapse: collapse; 
+      table {     border-collapse: collapse;
           margin-top: 1em;
       }
       th {     padding: 5px;     border: 5px solid ; }
@@ -258,7 +258,7 @@ Einstellungen werden an 3 Orten gespeichert:
 - Datei aus Stage wieder entfernen
   - `git reset HEAD` *DATEINAME*
 - Tipp:
-  - `git config --global alias.unadd "reset HEAD"` 
+  - `git config --global alias.unadd "reset HEAD"`
 ---
 # Zustand: Commit
 ![inline](states.png)
@@ -280,7 +280,7 @@ oder interaktiv (öffnet Editor)
 
   - Nachvollziehbare, kurze Nachricht
   - Beschreibung der Änderung auf logischer Ebene
-  - Commit editieren: `git commit --amend` 
+  - Commit editieren: `git commit --amend`
 
 Beispiele:
 - *Changes API from sqlite2 to sqlite3*
@@ -488,7 +488,7 @@ z.B. `git checkout -b feature/add_scanner_support`
 Tipps:
 - Branch Namen mit "/" gruppieren
 - Ein Branch pro Aufgabe
-- Branches kosten nichts 
+- Branches kosten nichts
 - Branches können auf den Server übertragen werden
 - Ungebrauchte Branches löschen
 
@@ -518,17 +518,17 @@ Tipps:
   - `git stash`
 - Wie "lokales" Commit, jedoch nicht in History; Kann ausgegeben werden
   - `git stash list`
-- Kann wieder appliziert werden: 
+- Kann wieder appliziert werden:
   - `git stash apply`
 - ... und dann entfernt werden:
   - `git stash drop`
 - Alternative: Anwenden und entfernen:
   - `git stash pop`
 ---
-## Erweitertes Stashen: 
-- Kann "de-appliziert" werden: 
+## Erweitertes Stashen:
+- Kann "de-appliziert" werden:
   - `git stash show -p | git apply -R`
-- Alternativ: 
+- Alternativ:
   - `git config --global alias.stash-unapply '!git stash show -p | git apply -R'`
 - Ab dann
   - `git stash-unapply`
@@ -658,9 +658,62 @@ z.B. `git rebase -i feature/add/sqlite3/support`
   - Bei abgeschlossener Aufgabe "Pull-Request" stellen
   - Als Projekt-Maintainer: Pull-Request reviewen, annehmen
 ---
+# Aliase
+  - `cleanup = "clean -xfd"`
+  - `please = push --force-with-lease`
+  - `uncommit = reset --soft HEAD^`
+  - `obranch = branch --list --no-merged`
+  - `prev = log -1 -p`
+  - `preprev = log -1 -p`
+---
+# Eigene Farben
+```
+[color]
+    ui = auto
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+```
+---
+# Eigene Diff-Farben
+```
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+```
+---
+# Vertipper Helfer
+```
+[help]
+    autocorrect = 1
+```
+---
+# Submodule parallel laden
+```
+[submodule]
+    fetchJobs = 8
+```
+---
+# Gelöschte Branches auch lokal löschen
+```
+[fetch]
+    prune = true
+```
+---
+# Submodule mit "fetchen"
+```
+[fetch]
+    recurseSubmodules = yes
+```
+---
+
+---
 # GUIs:
 - gitk (Sehr rudimentär, in git oft eingebaut, OpenSource)
-- Git Kraken (Kostenlos, macOS, Windows, Linux)
+- Git Kraken (Privat Kostenlos, macOS, Windows, Linux)
 - Source Tree (Kostenlos, macOS, Windows)
 - Github Desktop (Kostenlos, macOS, Windows)
 - GitX (Open Source, macOS)
