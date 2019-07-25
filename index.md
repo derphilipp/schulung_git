@@ -586,8 +586,9 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 # GUIs:
 - gitk (Sehr rudimentär, in git oft eingebaut, OpenSource)
 - Git Extensions (Windows, Open Source)
-- Git Kraken (Privat Kostenlos, macOS, Windows, Linux)
-- Source Tree (Kostenlos, macOS, Windows)
+- Git Kraken (Privat Kostenlos, macOS, Windows, Linux, Datenschutz!)
+- Source Tree (Kostenlos, macOS, Windows, Datenschutz!)
+- Gitup (MacOS, Open Source)
 - Github Desktop (Kostenlos, macOS, Windows)
 - GitX (Open Source, macOS)
 - TortoiseGit (Windows) (Warnung!)
