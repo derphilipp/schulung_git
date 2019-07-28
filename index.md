@@ -69,7 +69,7 @@ Philipp Weißmann
 ---
 # Installation
 - Linux:
-  - Meist schon installiert, Paktmanager
+  - Meist schon installiert, Paketmanager
 - macOS:
   - Schon installiert, neuere Version: Installationspaket, Homebrew oder Macports
 - Windows:
