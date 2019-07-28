@@ -613,6 +613,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 
 ---
 # Cheat Sheets
+- [Flight Rules](https://github.com/k88hudson/git-flight-rules)
 - [Github](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 - [NDP Software](http://ndpsoftware.com/git-cheatsheet.html)
 - [Zack Rusin](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
