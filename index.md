@@ -599,6 +599,23 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 - Visual Studio ab 2015
 
 ---
+# Plugins:
+
+## VSCode
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+
+## (n)vim
+- [GitGutter](https://github.com/airblade/vim-gitgutter)
+- [Vim Fugitivee](https://github.com/tpope/vim-fugitive)
+
+## Zsh
+- [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+## Fish
+- [Oh my fish](https://github.com/oh-my-fish/oh-my-fish)
+
+---
 # Weiterführendes und Quellen
 ## Weiterlesen:
 - Chacon, Straub "Pro Git Book", Apress, https://git-scm.com/book/de
