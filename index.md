@@ -128,8 +128,6 @@ Einstellungen werden an 3 Orten gespeichert:
   - `git add` *DATEINAME*
 - Datei aus Stage wieder entfernen
   - `git reset HEAD` *DATEINAME*
-- Tipp:
-  - `git config --global alias.unadd "reset HEAD"`
 ---
 # Zustand: Commit
 ![inline](states.png)
@@ -173,10 +171,7 @@ Beispiele:
 ![inline](states.png)
 
 ---
-# Navigieren & Zurücksetzen
-- Stellt definierten Zustand von Datei(en) her
-- Eine Datei zurücksetzen:
-  - `git restore ` *DATEINAME*
+# Switch
 - Auf einen vorhanden Zweig wechseln
   - `git switch ` *DATEINAME*
 - Auf einen alten Stand wechseln:
@@ -184,10 +179,22 @@ Beispiele:
   - Achtung: Ohne neuen Branch befindet man sich im "detached head state", d.h. es können keine Änderungen commited werden
 - Aus "detached head state" zurückkehren:
   - `git switch -`
-- Alle Dateien auf gegebenen Stand setzen:
-  - `git reset --hard ` *VERSION*
 
 ---
+# Restore & Reset
+- Eine Datei zurücksetzen:
+  - `git restore ` *DATEINAME*
+- Alle Dateien auf gegebenen Stand setzen:
+  - `git reset --hard ` *VERSION*
+- z.B. Zurücksetzen des Projektes auf den 'main' Stand vom Server 'origin'
+  - `git reset --hard origin/main`
+---
+# Checkout
+- `checkout` erledigte die Aufgabe von `restore` UND `switch` gleichzeitig
+- Empfehlung: `switch` und `restore` einzeln verwenden.
+-
+---
+
 # Workflow
 ![inline](workflow.png)
 
