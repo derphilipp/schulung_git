@@ -173,15 +173,19 @@ Beispiele:
 ![inline](states.png)
 
 ---
-# Checkout
+# Navigieren & Zurücksetzen
 - Stellt definierten Zustand von Datei(en) her
-- Eine Datei:
-  - `git checkout ` *DATEINAME*
-- Ein kompletter Zustand:
-  - `git checkout ` *VERSION*
+- Eine Datei zurücksetzen:
+  - `git restore ` *DATEINAME*
+- Auf einen vorhanden Zweig wechseln
+  - `git switch ` *DATEINAME*
+- Auf einen alten Stand wechseln:
+  - `git switch --detach` *COMMIT-ID*
   - Achtung: Ohne neuen Branch befindet man sich im "detached head state", d.h. es können keine Änderungen commited werden
 - Aus "detached head state" zurückkehren:
-  - `git checkout -`
+  - `git switch -`
+- Alle Dateien auf gegebenen Stand setzen:
+  - `git reset --hard ` *VERSION*
 
 ---
 # Workflow
@@ -341,18 +345,23 @@ index 9104311..d9df5cb 100644
 
 ---
 # Auf vorhandenen Branch wechseln:
-`git checkout BRANCHNAME`
+`git switch BRANCHNAME`
 - Wechselt auf schon vorhandenen Branch
 
-z.B. `git checkout add_scanner_support`
+z.B. `git switch add_scanner_support`
 
+Alter Befehl dafür:
+`git checkout BRANCHNAME`
 
 ---
 # Branch erstellen:
-`git checkout -b BRACHNAME`
+`git switch -c BRACHNAME`
 - Legt neuen Branch an
 
-z.B. `git checkout -b feature/add_scanner_support`
+z.B. `git switch -c feature/add_scanner_support`
+
+Alter Befehl dafür:
+`git checkout -b feature/add_scanner_support`
 
 ---
 # Branching Tipps
@@ -503,7 +512,7 @@ Acht
 ## Rebasing
 - Basis eines Branches auf den neuesten Stand verschieben
 
-`git checkout feature/add_sqlite3_support`
+`git switch feature/add_sqlite3_support`
 
 `git rebase master`
 
