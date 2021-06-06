@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.19.6",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*",
+    "@slidev/theme-apple-basic": "*"
+  },
+  "name": "schulung_git"
+}
