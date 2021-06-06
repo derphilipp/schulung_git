@@ -759,7 +759,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 
 # Aliase
 
-``` toml
+```toml
   cleanup = "clean -xfd"
   please = push --force-with-lease
   uncommit = reset --soft HEAD^
@@ -771,7 +771,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 ---
 
 # Eigene Farben
-``` toml
+```toml
 [color]
     ui = auto
 [color "status"]
@@ -784,7 +784,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 
 
 # Eigene Diff-Farben
-``` toml
+```toml
 [color "diff-highlight"]
     oldNormal = red bold
     oldHighlight = red bold 52
@@ -796,7 +796,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 
 # Vertipper Helfer
 
-``` toml
+```toml
 [help]
     autocorrect = 1
 ```
@@ -804,7 +804,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 ---
 
 # Submodule parallel laden
-``` toml
+```toml
 [submodule]
     fetchJobs = 8
 ```
@@ -812,7 +812,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 ---
 
 # Gelöschte Branches auch lokal löschen
-``` toml
+```toml
 [fetch]
     prune = true
 ```
@@ -821,7 +821,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 
 # Submodule mit "fetchen"
 
-``` toml
+```toml
 [fetch]
     recurseSubmodules = yes
 ```
