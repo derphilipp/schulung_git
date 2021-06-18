@@ -642,7 +642,7 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 - Pro Git Book https://git-scm.com/book/de
 
 ## Weitermachen
-- [Try Git](https://try.github.io)
+- [Oh My Git](https://oh-my-git.org) Spielerisch Git lernen
 
 ---
 # Cheat Sheets
