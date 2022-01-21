@@ -35,7 +35,7 @@ Philipp Weißmann
 ---
 # Historie
 
-- 2005 von L. Torvarlds gestartet
+- 2005 von L. Torvalds gestartet
 - Ziele:
   - Verteilt
   - Sicherheit gegen Verfälschung
