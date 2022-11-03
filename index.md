@@ -640,6 +640,9 @@ z.B. `git rebase -i feature/add/sqlite3/support`
 - Chacon, Straub "Pro Git Book", Apress, https://git-scm.com/book/de
 - Loelinger, McCullough "Version Control with Git: Powerful tools and techniques for collaborative software development", Oreilly, 2012
 
+# Grafisches:
+- [Git-Purr](https://github.com/girliemac/a-picture-is-worth-a-1000-words/tree/main/git-purr)
+
 ## Quellen
 - Vortrag von Gareth Hall - Introduction to Git Version Control, 2013
 - Pro Git Book https://git-scm.com/book/de
