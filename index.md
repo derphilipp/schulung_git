@@ -20,7 +20,9 @@ Philipp Weißmann
 #[Simply Explained...](http://geek-and-poke.com/geekandpoke/2012/11/3/simply-explained.html)
 
 ---
-#[Wir starten hier...](http://geekandpoke.typepad.com/geekandpoke/2012/07/simply-explained-2.html)
+
+#[Wir starten hier...](https://xkcd.com/1597/)
+
 ---
 # Motivation für Versionsmanagement
 
@@ -150,6 +152,7 @@ oder interaktiv (öffnet Editor)
   - Nachvollziehbare, kurze Nachricht
   - Beschreibung der Änderung auf logischer Ebene
   - Commit editieren: `git commit --amend`
+  - [Passender XKCD Comic](https://xkcd.com/1296/)
 
 Beispiele:
 - *Changes API from sqlite2 to sqlite3*
