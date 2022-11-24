@@ -308,7 +308,7 @@ f83fcb6 Add awesome-gyazo
 ---
 # Exkurs: Eigene Kommandos
 - Beispiel: Neues Projekt:
-  - `$ git config --global alias.it '!git init && git commit -m "Erster Commit" --allow-empty'`
+  - `git config --global alias.it '!git init && git commit -m "Erster Commit" --allow-empty'`
 - Wirklich alles 'Stashen'
   - `git config --global alias.stashall 'stash --all'`
 - Hübsches git log (siehe zuvor)
