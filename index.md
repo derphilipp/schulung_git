@@ -98,6 +98,9 @@ Einstellungen werden an 3 Orten gespeichert:
 - Editor einstellen:
   - `git config --global core.editor notepad`
   - `git config --global core.editor "'c:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
+
+- Standardname für Hauptzweig
+  - `git config --global init.defaultBranch main`
 ---
 # Zustände
 ![inline](states.png)
