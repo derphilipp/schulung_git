@@ -98,6 +98,9 @@ Einstellungen werden an 3 Orten gespeichert:
 - Editor einstellen:
   - `git config --global core.editor notepad`
   - `git config --global core.editor "'c:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"`
+
+- Standardname für Hauptzweig
+  - `git config --global init.defaultBranch main`
 ---
 # Zustände
 ![inline](states.png)
@@ -309,7 +312,7 @@ f83fcb6 Add awesome-gyazo
 # Exkurs: Eigene Kommandos
 - Beispiel: Neues Projekt:
   - `git config --global alias.it '!git init && git commit -m "Erster Commit" --allow-empty'`
-- Wirklich alles 'Stashen'
+- Wirklich alles 'stashen'
   - `git config --global alias.stashall 'stash --all'`
 - Hübsches git log (siehe zuvor)
   - `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
